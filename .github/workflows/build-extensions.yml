@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: firstoni-dev/ascension-extensions-reconstruction
-          ref: 85f159b01f74f843c6ae6978fec61d2e6da7e7b5
+          ref: 8b8487b3dfe734e535eb754f0a0099e0258a00ab
           persist-credentials: false
 
       - name: Configure 32-bit Windows build
@@ -38,7 +38,7 @@ jobs:
       - name: Upload download package
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
-          name: Extensions-win32-85f159b
+          name: Extensions-win32-8b8487b
           path: package/
           if-no-files-found: error
           retention-days: 30
